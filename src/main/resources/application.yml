@@ -1,0 +1,6 @@
+#spring:
+ ## datasource:
+   ## username: root
+##  password: password
+##    Url:jdbc: postgresql://localhost:5432/mycrudapp
+##    driver-class-name: org.postgresql.Driver
