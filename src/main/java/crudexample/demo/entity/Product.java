@@ -23,7 +23,4 @@ public class Product {
     private int quantity;
     private double price;
 
-
-
-    List<Integer> arr;
 }

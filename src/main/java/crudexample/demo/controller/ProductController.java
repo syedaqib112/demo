@@ -26,11 +26,11 @@ public class ProductController {
          public List<Product> findAllProducts(){
             return service.getProduct();
          }
-         @GetMapping("/product/{id}")
+         @GetMapping("/productById/{id}")
          public Product findProductsByID(@PathVariable int  id){
             return service.getProductByID(id);
         }
-        @GetMapping("/product/{name}")
+        @GetMapping("/productByName/{name}")
         public Product findProductByName(@PathVariable String  name){
             return service.getProductByName(name);
         }
@@ -39,7 +39,7 @@ public class ProductController {
     public Product updateProduct(@RequestBody Product product){
         return  service.updateProduct(product);
     }
-    @DeleteMapping("/DeleteProduct")
+    @DeleteMapping("/DeleteProduct/{id}")
     public String deleteProduct(@PathVariable int id){
             return service.deleteProduct(id);
     }
